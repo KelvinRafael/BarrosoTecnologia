@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--azulEscuro);
+    /* color: var(--azulEscuro); */
 }
 
 :root{
@@ -12,20 +12,34 @@
 
 }
 
-body{
-    /* background: url('/Images/BARROSO\ SOLAR.jpg') no-repeat center center; */
-}
-
 /* =================================== Section Cabecalho =================================== */
 
 nav{
-    background: url('/Images/image_cliente.png') center no-repeat fixed;
-    background-size: cover;
     display: flex;
     width: 100%;
-    padding-top: 30vw;
-    background-color: var(--azulEscuro);
-    justify-content: end;
+    background-color: var(--cinzaEscuro);
+    justify-content: space-between;
+    color: white;
+}
+
+#img-logo{
+    width: 10vw;
+}
+
+#d-links{
+    display: flex;
+    padding: 1vw;
+}
+
+#d-links a {
+    padding: 1vw;
+    text-decoration: none;
+    color: white;
+    margin-top: 3vw;
+}
+
+#d-links a:hover{
+    color: #FFB700;
 }
 
 #d-btn-1{
@@ -33,17 +47,22 @@ nav{
 }
 
 #d-btn-1 button{
-    width: 100%;
-    color: #ffffff;
+    width: 90%;
+    color: var(--cinzaEscuro);
     border: none;
-    background-color: var(--azulEscuro);
-    padding-top: 0.6vw;
-    padding-bottom: 0.6vw;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    margin-bottom: 2vw;
+    background-color: white;
+    padding: 0.6vw 3vw 0.6vw 3vw;
+    margin: 2vw 2vw;
     border-radius: 1vw;
     box-shadow: 0px 0px 4px white;
+}
+
+#d-btn-1 a{
+    width: 10%;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c;
 }
 
 #d-btn-2{
@@ -61,8 +80,91 @@ nav{
     box-shadow: 0px 0px 4px white;
 }
 
-#d-btn-2 button:hover{
-    background-color: white;
+#d-btn-1 button:hover{
+    background-color: rgb(100, 98, 98);
+    box-shadow: 0px 0px 0px white;
+    color: white;
+}
+
+
+
+/* =================================== Section Energia Solar =================================== */
+
+
+#s-EnergiaSolar{
+
+    width: 100%;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 3vw;
+
+    background-image: url('/Images/Untitled\ design.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 5vw;
+    padding-bottom:18vw;
+    color: white;
+}
+
+@keyframes animationRight {
+    
+    from{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes animationLeft {
+    
+    from{
+        opacity: 0;
+        transform: translateX(70%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+.d-energiaSolar h2{
+    
+    animation: animationRight 2s ease-out;
+
+}
+
+.d-energiaSolar p{
+
+    animation: animationLeft 2s ease-out;
+
+}
+
+#s-EnergiaSolar h2{
+    color: #ffffff;
+    width: 70%;
+    padding: 3vw 0vw 0vw 0vw;
+    font-size: 7vw;
+    text-shadow: 1px 1px 10px rgb(146, 146, 146);
+}
+
+#d-video{
+    text-align: center;
+}
+
+video{
+    /* margin-left: 5vw; */
+    width: 70%;
+
 }
 
 /* =================================== Section Sobre =================================== */
@@ -70,104 +172,165 @@ nav{
 #s-sobre{
     display: flex;
     width: 100%;
-    padding-top: 2vw;
-    padding-bottom: 8vw;
-    margin-bottom: 4vw;
+    margin: auto;
     font-size: 1.5vw;
-    /* box-shadow: 0px 0px 20px rgb(218, 216, 216); */
-    border-top: 2px solid var(--cinzaClaro);
+
 }
 
 .d-sobre{
-    width: 40%;
     margin: auto;
+    padding: 3vw;
+    text-align: center;
+    width: 40%;
+}
+
+.d-sobre img{
+    width: 70%;
+}
+
+#d-bt{
+    background-color: #1b1b49;
+    border-radius: 10px;
+}
+
+#d-bt img{
+
+    filter: brightness(6);
+}
+
+#d-bt p{
+    color: white;
+}
+
+#d-sa{
+    background-color: rgb(8, 190, 99);
+    border-radius: 10px;
+}
+
+/* .d-sobre{
+    margin: auto;
+    text-align: center;
+} */
+
+/* =================================== Section Servicos =================================== */
+
+#s-servicos{
+    margin-top: 3vw;
+    background-color: #EDECEB    
+}
+
+#s-servicos h2{
+    padding-top: 2vw;
     text-align: center;
 }
 
-
-#img-bt{
-    width: 60%;
+#d-servicos{
+    display: flex;
+    width: 100%;
     margin: auto;
+}
+
+#s-servicos div{
+    margin: auto;
+    padding: 3vw;
+}
+
+#s-servicos img{
+    width: 90%;
+}
+
+#s-servicos li{
+    padding: 1.5vw;
+    font-size: 1.5vw;
+    /* list-style: symbols(); */
+    list-style-type: "\26A1";
+}
+
+#d-banner{
+    width: 50%;
+    text-align: center;
+}
+
+/* =================================== Section Vantagens  =================================== */
+
+#s-Vantagens{
+    width: 100%;
+    background-image: url('/Images/Floresta.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+#bannerVantagens{
+    width: 90%;
+    margin: auto;
+    /* padding-top: 2vw; */
     margin-bottom: 2vw;
+    padding: 3vw;
+    /* background-color: rgb(8, 190, 99); */
+    background-color: var(--cinzaClaro);
+    color: #ffffff;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 5px;
 }
 
-#img-sa{
-    width: 60%;
+#d-Vantagens{
+    display: flex;
+}
+
+.info{
+    display: flex;
+    margin-top: 3vw;
+}
+
+.info h2{
+    font-size: 2vw;
+}
+
+.info p{
+    font-size: 15px;
+    width: 80%;
+}
+
+.info img{
+    width: 20%;
+}
+
+
+/* =================================== Section Parceiros =================================== */
+
+#s-parceiros{
+    width: 90%;
     margin: auto;
-
-}
-
-#d-e{
+    margin-top: 2vw;
+    display: flex;
     align-items: center;
-    margin: auto;
-    animation: flut 4s infinite alternate;
 }
 
-#d-e h1{
-    font-size: 15vw;
-    color: #1b1b49;
+#s-parceiros h1{
+    color: #3b3a3a;
 }
 
-@keyframes flut {
-    0%{
-        transform: translateY(0px)
-        rotate(0deg)
-    }
+#s-parceiros img{
 
-    50%{
-        transform: translateY(-10px)
-        rotate(3deg)
-    }
+    width: 100%;
 
-    100%{
-        transform: translateY(10px)
-        rotate(-1deg)
-    }
+}
+
+#s-parceiros div{
+
+    width: 50%;
+
 }
 
 /* =================================== Section Together =================================== */
 #s-together-1{
-    position: relative;
-    width: 70%;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
+    width: 60%;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    border-radius: 10px;
-    margin-top: 4vw;
-    margin-bottom: 9vw;
-
+    margin-top: 3vw;
+    margin-bottom: 8vw;
 }
-
-#s-together-1::before, #s-together-1::after{    
-    content: '';
-    position: absolute;
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
-    background: linear-gradient(45deg, rgb(156, 103, 4), rgb(255, 255, 0), rgb(241, 164, 20), rgb(245, 245, 0),rgb(241, 164, 20), rgb(245, 245, 0), rgb(241, 164, 20), rgb(245, 245, 0));
-    background-size: 300%;
-    z-index: -1;
-    border-radius: 10px;
-    animation: animar1 8s linear infinite;
-}
-
-@keyframes animar1 {
-    0%{
-        background-position: 0;
-    }
-
-    100%{
-        background-position: 300%;
-    }
-}
-
-#s-together-1::after{
-    filter: blur(50px);
-}
-
 #s-together-1 h1{
     text-align: center;
     color: #FFB700;
@@ -218,20 +381,21 @@ nav{
     }
 }
 
-/* =================================== Section Carrossel =================================== */
+/* =================================== Section Carrossel Equipamentos =================================== */
 
 #s-carrosselEquipamentos{
-    width: 100%;
+    width: 80%;
     margin: auto;
-    background-color: #6bb616;
+    margin-top: 3vw;
+    background-color: var(--cinzaEscuro);
     text-align: center;
     color: white;
-}
+    margin-bottom: 3vw;
 
-.active img{
-    width: 10%;
-}
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 
+}
 .d-block{
     width: 10%;
     max-height: 10%;
@@ -241,10 +405,6 @@ nav{
     padding-top: 2vw;
     margin: 0;
     color: white;
-}
-
-.carousel-item h5{
-    color: #2c2c2c;
 }
 
 .carousel-caption{
@@ -274,6 +434,8 @@ nav{
 #f-rodape div{
     width: 40%;
     text-align: center;
+    color: #ffffff;
+    font-size: 1vw;
 }
 
 #f-rodape ul {
