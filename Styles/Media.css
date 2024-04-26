@@ -3,7 +3,7 @@
     /* ====================================================================== */
 
 
-    @media only screen and (max-width: 800px) {
+    @media(max-width: 800px) {
 
       #n-desktop {
         background-color: rgb(255, 13, 13);
@@ -28,7 +28,7 @@
       .dropdown button{
         display: flex;
         padding: 3vw;
-        font-size: 2vw;
+        font-size: 4vw;
         align-items: center;
         margin-right: 3vw;
         margin-top: 3vw;
