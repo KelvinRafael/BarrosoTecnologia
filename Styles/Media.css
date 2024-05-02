@@ -40,15 +40,19 @@
         
       }
 
-
       #s-EnergiaSolar{
         display: block;
         margin: auto;
-        
+        text-align: center;
+
+      }
+      .d-energiaSolar h2, p{
+        width: 70%;
+        margin: auto;      
       }
 
-      #d-energiaSolar h2, p{
-        width: 70%;
+      .d-energiaSolar p {
+        margin-top: 3vw;
       }
 
       #d-video video{
