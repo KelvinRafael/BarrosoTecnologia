@@ -203,7 +203,8 @@ nav{
 #d-video img{
     /* margin-left: 5vw; */
     width: 70%;
-    border-radius: 1vw;
+    /* border-radius: 1vw; */
+    box-shadow: 0px 0px 10px rgb(51, 51, 51);
 }
 
 /* =================================== Section Sobre =================================== */
